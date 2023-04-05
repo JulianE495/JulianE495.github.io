@@ -1,0 +1,1029 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #000;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(46, 46, 46);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.menuContainer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+.menuContainer ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.menuContainer ul li a{
+    padding: 31px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+}
+
+.menuOPT{
+    color: #FFF;
+    text-decoration: none;
+}
+.menuContainer ul li a:hover{
+    background-color: rgb(46, 46, 46);
+}
+.perfilContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    width: 100%;
+    height: 900px;
+    background-image: url(images/background.png);
+}
+.leftSideProfile{
+    width: 50%;
+}
+.leftSideProfile h1{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.leftSideProfile span{
+    font-weight: 400;
+}
+
+.rightSideProfile{
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 450px;
+    height: 450px;
+    background-color: #000000;
+}
+
+.profilePhoto{
+    background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+}
+.socialsContainer{
+    display: flex;
+    flex-direction: row;
+}
+.socialContainer{
+    width: 100px;
+    height: 100px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 5px;
+    background-color: rgb(255, 240, 240);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.socialText{
+    font-size: 70px;
+    color: #000;
+}
+
+.habilidadesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*position: relative;*/
+    margin: auto;
+    padding-top: 45px;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(209, 231, 235);
+}
+
+.title{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.subtitle{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    font-size: 25px;
+}
+.tiposDeHabs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*position: relative;*/
+    margin-top: 20px;
+    width: 100%;
+}
+.subtitle-2{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.developmentSkills{
+    padding: 10px;
+    display: flex;
+    align-self: start;
+    width: 100%;
+    flex-direction: column;
+}
+
+.progressContainer {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+.progressContainer .progressTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.progressContainer .skillTitle{
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+.progressContainer .progress {
+    height: 13px;
+    width: 100%;
+    overflow: visible;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 3px;
+    background: rgb(129, 213, 228);
+    box-shadow: inset 8px 8px 16px rgb(0 0 0 / 46%), inset -8px -8px 16px rgb(56 62 69 / 46%);
+}
+
+.progressContainer .progress .progressBar {
+    border-radius: 14px;
+    background: #22366d;
+    height: 100%;
+}
+
+.proyectosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*position: relative;*/
+    margin: auto;
+    padding-top: 45px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(209, 231, 235);
+}
+
+.projectsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   /*position: relative;*/
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+
+.card{
+    max-width: 300px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    max-width: 500px;
+    height: 300px;
+    padding: 35px;
+    margin: 20px;
+    
+    border-radius: 20px;
+    background-color: rgba(78, 78, 78, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.322);
+
+    backdrop-filter: blur(15px);
+
+}
+
+.card img{
+    width: 100%;
+}
+
+.card span{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.projectButton{
+    background-color: #313131;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Comfortaa', cursive;
+}
+
+.projectButton:hover{
+    background-color: #383838;
+}
+
+.contactoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*position: relative;*/
+    margin: auto;
+    padding-top: 45px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209, 231, 235);
+  }
+
+  .camposContainer{
+    width: 900px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 30px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*position: relative;*/
+  }
+
+  .campoTitle{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .txt{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    
+    border: none;
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 5px;
+    background-color: rgb(255, 240, 240);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+  }
+  
+  .aboutMeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*position: relative;*/
+    margin: auto;
+    padding-top: 45px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(209, 231, 235);
+  }
+
+  .aboutMeBody{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Comfortaa', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+}
+
+.btn{
+    width: 300px;
+    height: 100px;
+
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 5px;
+    background-color: rgb(255, 240, 240);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.aboutMeFooter{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Comfortaa', cursive;
+    padding: 50px;
+}
+.amfcontent{
+    display: flex;
+    flex-direction: column;
+}
+.footerTitle{
+    color: #464646;
+    font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .menuContainer {
+        display: none;
+    }
+    
+    /* PARTE INICIAL DE LA PAGINA */
+    .perfilContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0px;
+        padding: 10px;
+        height: 600px;
+    }
+
+    .rightSideProfile{
+        order: 1;
+    }
+    .profilePhoto{
+        width: 300px;
+        height: 300px;
+    }
+    .leftSideProfile{
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .leftSideProfile h1{
+        font-size: 20px;
+    }
+    .socialsContainer{
+        order: 3;
+    }
+
+    .socialContainer{
+        width: 60px;
+        height: 60px;
+    }
+
+    .socialContainer i{
+        font-size: 30px;
+    }
+
+    /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
+    .title{
+        font-size: 30px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+
+    .aboutMeContainer{
+        height: auto;
+    }
+    .aboutMeBody{
+        font-size: 20px;
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 0%;
+        
+    }
+    .btn{
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .aboutMeFooter{
+        flex-direction: column;
+        padding-top: 0%;
+        padding: 20px;
+    }
+    .footerTitle{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .footerText{
+        font-size: 20px;
+    }
+
+    /* TERCERA PARTE DE LA PAGINA HABILIDADES */
+    .habilidadesContainer{
+        height: auto;
+    }
+    .tiposDeHabs{
+        flex-direction: column;
+    }
+
+    /* CUARTA PARTE DE LA PAGINA PROYECTOS */
+    .projectsContainer{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+        .menuContainer {
+            display: none;
+        }
+    
+        /* PARTE INICIAL DE LA PAGINA */
+        .perfilContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 0px;
+            padding: 10px;
+            height: 600px;
+        }
+    
+        .rightSideProfile {
+            order: 1;
+        }
+    
+        .profilePhoto {
+            width: 300px;
+            height: 300px;
+        }
+    
+        .leftSideProfile {
+            order: 2;
+            width: 100%;
+            margin-top: 20px;
+        }
+    
+        .leftSideProfile h1 {
+            font-size: 20px;
+        }
+    
+        .socialsContainer {
+            order: 3;
+        }
+    
+        .socialContainer {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .socialContainer i {
+            font-size: 30px;
+        }
+    
+        /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
+        .title {
+            font-size: 30px;
+        }
+    
+        .subtitle {
+            font-size: 20px;
+        }
+    
+        .aboutMeContainer {
+            height: auto;
+        }
+    
+        .aboutMeBody {
+            font-size: 20px;
+            flex-direction: column;
+            padding: 20px;
+            padding-bottom: 0%;
+    
+        }
+    
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .aboutMeFooter {
+            flex-direction: column;
+            padding-top: 0%;
+            padding: 20px;
+        }
+    
+        .footerTitle {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    
+        .footerText {
+            font-size: 20px;
+        }
+    
+        /* TERCERA PARTE DE LA PAGINA HABILIDADES */
+        .habilidadesContainer {
+            height: auto;
+        }
+    
+        .tiposDeHabs {
+            flex-direction: column;
+        }
+    
+        /* CUARTA PARTE DE LA PAGINA PROYECTOS */
+        .projectsContainer {
+            flex-direction: column;
+        }
+}
+
+@media only screen and (min-width: 768px) {
+        /* MENU */
+        .menuContainer {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            position: fixed;
+            display: flex;
+            z-index: 1;
+        }
+
+        .menuContainer ul {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            list-style: none;
+
+        }
+
+        .menuContainer ul li a {
+            padding: 31px;
+            font-family: 'Comfortaa', cursive;
+            font-weight: 400;
+        }
+
+        .menuOPT {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .menuContainer ul li a:hover {
+            background-color: rgb(46, 46, 46);
+        }
+
+
+
+        /* PARTE INICIAL DE LA PAGINA */
+        .perfilContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 80px;
+            width: 100%;
+            height: 500px;
+            background-image: url(images/background.png);
+        }
+
+        .leftSideProfile {
+            width: 60%;
+            order: 1;
+        }
+
+        .leftSideProfile h1 {
+            font-family: 'Comfortaa', cursive;
+            font-weight: 200;
+            font-size: 25px;
+        }
+
+        .leftSideProfile span {
+            font-weight: 400;
+        }
+
+        .rightSideProfile {
+            border-radius: 100%;
+            border-style: solid;
+            border-color: #ffffff;
+            border-width: 10px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 200px;
+            height: 200px;
+            background-color: #000000;
+        }
+
+        .profilePhoto {
+            background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+        }
+
+        .socialContainer {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .socialContainer i {
+            font-size: 30px;
+        }
+    
+        /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
+        .title {
+            font-size: 30px;
+        }
+    
+        .subtitle {
+            font-size: 20px;
+        }
+    
+        .aboutMeContainer {
+            height: auto;
+        }
+    
+        .aboutMeBody {
+            font-size: 20px;
+            flex-direction: column;
+            padding: 20px;
+            padding-bottom: 0%;
+    
+        }
+    
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .aboutMeFooter {
+            flex-direction: column;
+            padding-top: 0%;
+            padding: 20px;
+        }
+    
+        .footerTitle {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    
+        .footerText {
+            font-size: 20px;
+        }
+    
+        /* TERCERA PARTE DE LA PAGINA HABILIDADES */
+        .habilidadesContainer {
+            height: auto;
+        }
+    
+        .tiposDeHabs {
+            flex-direction: column;
+        }
+    
+        /* CUARTA PARTE DE LA PAGINA PROYECTOS */
+        .projectsContainer {
+            flex-direction: column;
+        }
+}
+
+@media only screen and (min-width: 992px) {
+    /* MENU */
+        .menuContainer {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            position: fixed;
+            display: flex;
+            z-index: 1;
+        }
+    
+        .menuContainer ul {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            list-style: none;
+    
+        }
+    
+        .menuContainer ul li a {
+            padding: 31px;
+            font-family: 'Comfortaa', cursive;
+            font-weight: 400;
+        }
+    
+        .menuOPT {
+            color: #FFF;
+            text-decoration: none;
+        }
+    
+        .menuContainer ul li a:hover {
+            background-color: rgb(46, 46, 46);
+        }
+    
+    
+    
+        /* PARTE INICIAL DE LA PAGINA */
+        .perfilContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 80px;
+            width: 100%;
+            height: 500px;
+            background-image: url(images/background.png);
+        }
+    
+        .leftSideProfile {
+            width: 60%;
+            order: 1;
+        }
+    
+        .leftSideProfile h1 {
+            font-family: 'Comfortaa', cursive;
+            font-weight: 200;
+            font-size: 30px;
+        }
+    
+        .leftSideProfile span {
+            font-weight: 400;
+        }
+    
+        .rightSideProfile {
+            border-radius: 100%;
+            border-style: solid;
+            border-color: #ffffff;
+            border-width: 10px;
+    
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            width: 300px;
+            height: 300px;
+            background-color: #000000;
+        }
+    
+        .profilePhoto {
+            background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+        }
+    
+        .socialContainer {
+            width: 80px;
+            height: 80px;
+        }
+    
+        .socialContainer i {
+            font-size: 40px;
+        }
+    
+        /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
+        .title {
+            font-size: 30px;
+        }
+    
+        .subtitle {
+            font-size: 20px;
+        }
+    
+        .aboutMeContainer {
+            height: auto;
+        }
+    
+        .aboutMeBody {
+            font-size: 20px;
+            flex-direction: column;
+            padding: 20px;
+            padding-bottom: 0%;
+    
+        }
+    
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+        }
+    
+        .aboutMeFooter {
+            flex-direction: row;
+            padding-top: 0%;
+            padding: 20px;
+        }
+    
+        .footerTitle {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    
+        .footerText {
+            font-size: 20px;
+        }
+    
+        /* TERCERA PARTE DE LA PAGINA HABILIDADES */
+        .habilidadesContainer {
+            height: auto;
+        }
+    
+        .tiposDeHabs {
+            flex-direction: column;
+        }
+    
+        /* CUARTA PARTE DE LA PAGINA PROYECTOS */
+        .projectsContainer {
+            flex-direction: column;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* MENU */
+        .menuContainer {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            position: fixed;
+            display: flex;
+            z-index: 1;
+        }
+    
+        .menuContainer ul {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            list-style: none;
+    
+        }
+    
+        .menuContainer ul li a {
+            padding: 31px;
+            font-family: 'Comfortaa', cursive;
+            font-weight: 400;
+        }
+    
+        .menuOPT {
+            color: #FFF;
+            text-decoration: none;
+        }
+    
+        .menuContainer ul li a:hover {
+            background-color: rgb(46, 46, 46);
+        }
+    
+    
+    
+        /* PARTE INICIAL DE LA PAGINA */
+        .perfilContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 80px;
+            width: 100%;
+            height: 500px;
+            background-image: url(images/background.png);
+        }
+    
+        .leftSideProfile {
+            width: 60%;
+            order: 1;
+        }
+    
+        .leftSideProfile h1 {
+            font-family: 'Comfortaa', cursive;
+            font-weight: 200;
+            font-size: 40px;
+        }
+    
+        .leftSideProfile span {
+            font-weight: 400;
+        }
+    
+        .rightSideProfile {
+            border-radius: 100%;
+            border-style: solid;
+            border-color: #ffffff;
+            border-width: 10px;
+    
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            width: 400px;
+            height: 400px;
+            background-color: #000000;
+        }
+    
+        .profilePhoto {
+            background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+        }
+    
+        .socialContainer {
+            width: 90px;
+            height: 90px;
+        }
+    
+        .socialContainer i {
+            font-size: 50px;
+        }
+    
+        /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
+        .title {
+            font-size: 35px;
+        }
+    
+        .subtitle {
+            font-size: 25px;
+        }
+    
+        .aboutMeContainer {
+            height: auto;
+        }
+    
+        .aboutMeBody {
+            font-size: 25px;
+            flex-direction: column;
+            padding: 20px;
+            padding-bottom: 0%;
+    
+        }
+    
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+        }
+    
+        .aboutMeFooter {
+            flex-direction: row;
+            padding-top: 0%;
+            padding: 20px;
+        }
+    
+        .footerTitle {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+    
+        .footerText {
+            font-size: 22px;
+        }
+    
+        /* TERCERA PARTE DE LA PAGINA HABILIDADES */
+        .habilidadesContainer {
+            height: auto;
+        }
+    
+        .tiposDeHabs {
+            flex-direction: column;
+        }
+    
+        /* CUARTA PARTE DE LA PAGINA PROYECTOS */
+        .projectsContainer {
+            flex-direction: column;
+        }
+}
