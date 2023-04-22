@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 80px;
     width: 100%;
     height: 900px;
-    background-image: url(images/background.png);
+    background-image: url(images/background.webp);
 }
 .leftSideProfile{
     width: 50%;
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .profilePhoto{
-    background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+    background-image: url(images/FotoPerfil\ -\ SinFondo.webp);
 }
 .socialsContainer{
     display: flex;
@@ -241,15 +241,16 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.card img{
-    width: 100%;
-}
-
 .card span{
     color: #000;
     font-size: 20px;
     font-family: 'Comfortaa', cursive;
+    margin-bottom: 10px;
 }
+.card img{
+    margin-bottom: 10px;
+}
+
 
 .projectButton{
     background-color: #313131;
@@ -261,6 +262,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 15px;
     font-weight: 400;
     font-family: 'Comfortaa', cursive;
+    color: #FFFFFF;
 }
 
 .projectButton:hover{
@@ -318,7 +320,22 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     margin-bottom: 15px;
   }
-  
+  textarea{
+    resize: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+
+    border: none;
+    width: 100%;
+    height: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-radius: 5px;
+    background-color: rgb(255, 240, 240);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+  }
   .aboutMeContainer{
     display: flex;
     flex-direction: column;
@@ -340,6 +357,11 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     padding: 50px;
+}
+
+.aboutMeBody p{
+    width: 50%;
+    white-space: normal;
 }
 
 .link{
@@ -382,7 +404,16 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
 }
 
-
+footer{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Comfortaa', cursive;
+    margin: auto;
+    width: 100%;
+    
+    background-color: rgb(209, 231, 235);
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -446,6 +477,10 @@ body::-webkit-scrollbar-thumb {
         padding-bottom: 0%;
         
     }
+    .aboutMeBody p{
+        width: 100%;
+        text-align: center;
+    }
     .btn{
         margin-top: 20px;
         width: 100%;
@@ -477,111 +512,133 @@ body::-webkit-scrollbar-thumb {
     .projectsContainer{
         flex-direction: column;
     }
+
+    .card span{
+        white-space: normal;
+        width: 100%;
+    }
+
+    /* QUINTA PARTE DE LA PAGINA CONTACTO */
+
+    .camposContainer {
+        width: 95%;
+        height: auto;
+    }
+
+    
 }
 
 @media only screen and (min-width: 600px) {
-        .menuContainer {
-            display: none;
-        }
-    
-        /* PARTE INICIAL DE LA PAGINA */
-        .perfilContainer {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            margin-top: 0px;
-            padding: 10px;
-            height: 600px;
-        }
-    
-        .rightSideProfile {
-            order: 1;
-        }
-    
-        .profilePhoto {
-            width: 300px;
-            height: 300px;
-        }
-    
-        .leftSideProfile {
-            order: 2;
-            width: 100%;
-            margin-top: 20px;
-        }
-    
-        .leftSideProfile h1 {
-            font-size: 20px;
-        }
-    
-        .socialsContainer {
-            order: 3;
-        }
-    
-        .socialContainer {
-            width: 60px;
-            height: 60px;
-        }
-    
-        .socialContainer i {
-            font-size: 30px;
-        }
-    
-        /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
-        .title {
-            font-size: 30px;
-        }
-    
-        .subtitle {
-            font-size: 20px;
-        }
-    
-        .aboutMeContainer {
-            height: auto;
-        }
-    
-        .aboutMeBody {
-            font-size: 20px;
-            flex-direction: column;
-            padding: 20px;
-            padding-bottom: 0%;
-    
-        }
-    
-        .btn {
-            margin-top: 20px;
-            width: 100%;
-            height: 50px;
-            font-size: 18px;
-        }
-    
-        .aboutMeFooter {
-            flex-direction: column;
-            padding-top: 0%;
-            padding: 20px;
-        }
-    
-        .footerTitle {
-            margin-top: 15px;
-            font-size: 18px;
-        }
-    
-        .footerText {
-            font-size: 20px;
-        }
-    
-        /* TERCERA PARTE DE LA PAGINA HABILIDADES */
-        .habilidadesContainer {
-            height: auto;
-        }
-    
-        .tiposDeHabs {
-            flex-direction: column;
-        }
-    
-        /* CUARTA PARTE DE LA PAGINA PROYECTOS */
-        .projectsContainer {
-            flex-direction: column;
-        }
+    .menuContainer {
+        display: none;
+    }
+
+    /* PARTE INICIAL DE LA PAGINA */
+    .perfilContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0px;
+        padding: 10px;
+        height: 600px;
+    }
+
+    .rightSideProfile {
+        order: 1;
+    }
+
+    .profilePhoto {
+        width: 300px;
+        height: 300px;
+    }
+
+    .leftSideProfile {
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .leftSideProfile h1 {
+        font-size: 20px;
+    }
+
+    .socialsContainer {
+        order: 3;
+    }
+
+    .socialContainer {
+        width: 60px;
+        height: 60px;
+    }
+
+    .socialContainer i {
+        font-size: 30px;
+    }
+
+    /* PARTE NUMERO DOS DE LA PAGINA ACERCA DE MI */
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .aboutMeContainer {
+        height: auto;
+    }
+
+    .aboutMeBody {
+        font-size: 20px;
+        flex-direction: column;
+        padding: 20px;
+        padding-bottom: 0%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .aboutMeFooter {
+        flex-direction: column;
+        padding-top: 0%;
+        padding: 20px;
+    }
+
+    .footerTitle {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .footerText {
+        font-size: 20px;
+    }
+
+    /* TERCERA PARTE DE LA PAGINA HABILIDADES */
+    .habilidadesContainer {
+        height: auto;
+    }
+
+    .tiposDeHabs {
+        flex-direction: column;
+    }
+
+    /* CUARTA PARTE DE LA PAGINA PROYECTOS */
+    .projectsContainer {
+        flex-direction: column;
+    }
+
+    /* QUINTA PARTE DE LA PAGINA CONTACTO */
+
+    .camposContainer {
+        width: 95%;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -629,7 +686,7 @@ body::-webkit-scrollbar-thumb {
             margin-top: 80px;
             width: 100%;
             height: 500px;
-            background-image: url(images/background.png);
+            background-image: url(images/background.webp);
         }
 
         .leftSideProfile {
@@ -662,7 +719,7 @@ body::-webkit-scrollbar-thumb {
         }
 
         .profilePhoto {
-            background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+            background-image: url(images/FotoPerfil\ -\ SinFondo.webp);
         }
 
         .socialContainer {
@@ -692,7 +749,8 @@ body::-webkit-scrollbar-thumb {
             flex-direction: column;
             padding: 20px;
             padding-bottom: 0%;
-    
+            text-align: center;
+            align-items: center;    
         }
     
         .btn {
@@ -730,6 +788,13 @@ body::-webkit-scrollbar-thumb {
         .projectsContainer {
             flex-direction: column;
         }
+        /* QUINTA PARTE DE LA PAGINA CONTACTO */
+
+        .camposContainer {
+            width: 95%;
+            height: auto;
+        }
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -777,7 +842,7 @@ body::-webkit-scrollbar-thumb {
             margin-top: 80px;
             width: 100%;
             height: 500px;
-            background-image: url(images/background.png);
+            background-image: url(images/background.webp);
         }
     
         .leftSideProfile {
@@ -810,7 +875,7 @@ body::-webkit-scrollbar-thumb {
         }
     
         .profilePhoto {
-            background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+            background-image: url(images/FotoPerfil\ -\ SinFondo.webp);
         }
     
         .socialContainer {
@@ -840,6 +905,8 @@ body::-webkit-scrollbar-thumb {
             flex-direction: column;
             padding: 20px;
             padding-bottom: 0%;
+            text-align: center;
+            align-items: center;
     
         }
     
@@ -877,6 +944,12 @@ body::-webkit-scrollbar-thumb {
         /* CUARTA PARTE DE LA PAGINA PROYECTOS */
         .projectsContainer {
             flex-direction: column;
+        }
+        /* QUINTA PARTE DE LA PAGINA CONTACTO */
+
+        .camposContainer {
+            width: 95%;
+            height: auto;
         }
 }
 
@@ -925,7 +998,7 @@ body::-webkit-scrollbar-thumb {
             margin-top: 80px;
             width: 100%;
             height: 900px;
-            background-image: url(images/background.png);
+            background-image: url(images/background.webp);
         }
     
         .leftSideProfile {
@@ -958,7 +1031,7 @@ body::-webkit-scrollbar-thumb {
         }
     
         .profilePhoto {
-            background-image: url(images/FotoPerfil\ -\ SinFondo.png);
+            background-image: url(images/FotoPerfil\ -\ SinFondo.webp);
         }
     
         .socialContainer {
@@ -988,7 +1061,7 @@ body::-webkit-scrollbar-thumb {
             margin: auto;
             padding-top: 45px;
             width: 100%;
-            height: 500px;
+            height: auto;
             background-color: rgb(209, 231, 235);
         }
 
@@ -1059,5 +1132,11 @@ body::-webkit-scrollbar-thumb {
         /* CUARTA PARTE DE LA PAGINA PROYECTOS */
         .projectsContainer {
             flex-direction: row;
+        }
+        /* QUINTA PARTE DE LA PAGINA CONTACTO */
+
+        .camposContainer {
+            width: 95%;
+            height: auto;
         }
 }

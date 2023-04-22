@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="indexStyle.css">
+    <meta name=description content="Portafolio Web" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julian Emiliano">
+    <!-- <link rel="stylesheet" href="indexStyle.css"> -->
+
+
+    <link rel="preload" href="indexStyle.css" as="style" onload="this.rel='stylesheet'"><noscript>
+        <link rel="stylesheet" href="indexStyle.css">
+    </noscript>
+
+
+
+
+
+
+    
     <title>Julian Emiliano</title>
 </head>
 <body>
     <header class="menuContainer">
         <ul>
             <li><a href="#" class="menuOPT">Inicio</a></li>
-            <li><a href="#" class="menuOPT">Contacto</a></li>
-            <li><a href="#" class="menuOPT">Portafolio</a></li>
+            <li><a href="#contacto" class="menuOPT">Contacto</a></li>
+            <li><a href="#portafolio" class="menuOPT">Portafolio</a></li>
         </ul>
     </header>
     <main>
@@ -50,14 +65,16 @@
         </div>
 
         <div class="aboutMeContainer">
-            <span class="title">Acerca de mi</span>
-            <span class="subtitle">Conoceme Mejor</span>
+            <h2 class="title">Acerca de mi</h2>
+            <h3 class="subtitle">Conoceme Mejor</h3>
             <div class="aboutMeBody">
                 <p>
-                    Soy un Desarrollador Web, que le gusta programar y es lo que mas disfruta, <br>
-                    puedo crear muchas cosas con todas las <a href="#habilidades" class="link"><u>habilidades</u></a> que tengo.
+                    Como desarrollador front-end, tengo habilidades en la creación de interfaces atractivas y responsivas utilizando
+                    tecnologías como HTML, CSS y JavaScript. Como editor de videos y fotos, tengo experiencia en la edición y producción de
+                    contenido visual de alta calidad utilizando herramientas como Adobe Premiere Pro y Photoshop. Con mi combinación de
+                    habilidades, puedo ayudarte a crear experiencias digitales atractivas y visualmente impactantes para tu audiencia.
                 </p>
-                <a href="#" class="btn">Contactame</a>
+                <a href="#contacto" class="btn">Contactame</a>
             </div>
             <div class="aboutMeFooter">
                 <div class="amfcontent">
@@ -80,8 +97,8 @@
         </div>
 
         <div class="habilidadesContainer" id="habilidades">
-            <span class="title">Mis Habilidades</span>
-            <span class="subtitle">Mis habilidades profesionales</span>
+            <h2 class="title">Mis Habilidades</h2>
+            <h3 class="subtitle">Mis habilidades profesionales</h3>
 
             <div class="tiposDeHabs">
 
@@ -185,96 +202,42 @@
                             <div class="progressBar" style="width: 50%;"></div>
                         </div>
                     </div>
-                </div>   
-                
+                </div>           
             </div>
-
-
         </div>
 
-        <div class="proyectosContainer">
-            <span class="title">Mis Proyectos</span>
-            <span class="subtitle">Algunos de mis proyectos</span>
+        <div class="proyectosContainer" id="portafolio">
+            <h2 class="title">Mis Proyectos</h2>
+            <h3 class="subtitle">Algunos de mis proyectos</h3>
 
             <div class="projectsContainer">
 
                 <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
+                    <img src="images/proyectoCalculadora.webp" alt="" style="width: 100%; height: auto;">
                     <span>Calculadora programada en <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> </span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-            </div>
-
-            <div class="projectsContainer">
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
-                </div>
-
-                <div class="card">
-                    <img src="images/proyectoCalculadora.png" alt="">
-                    <span>Este es un programa que permite administrar los contactos que tengas disponibles</span>
-                    <div><a href="#" class="projectButton">Ver demo</a></div>
+                    <div><a href="https://calculadoraemiliano.surge.sh/" class="projectButton">Ver demo</a></div>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="contactoContainer">
-            <span class="title">Contacta conmigo</span>
-            <span class="subtitle">Aqui puedes contactar conmigo</span>
+        <div class="contactoContainer" id="contacto">
+            <h2 class="title">Contacto</h2>
+            <h3 class="subtitle">Aqui puedes contactarme</h3>
 
-            <div class="camposContainer">
-                <span class="campoTitle">Nombre</span>
-                <input type="text" class="txt">
-
-                <span class="campoTitle">Apellido</span>
-                <input type="text" class="txt">
-
-                <span class="campoTitle">Email</span>
-                <input type="text" class="txt">
-
-                <span class="campoTitle">Asunto</span>
-                <input type="text" class="txt"> 
-
-                <span class="campoTitle">Mensaje</span>
-                <textarea class="txt" name="" id="" cols="30" rows="10" style="max-width: 836px; min-width: 836px;"></textarea>
-            </div>
-
-            
-        </div> -->
+            <form action="https://formsubmit.co/5322fa12b3c610f8bbbf887940928e05" method="POST" class="camposContainer">
+                <h4 class="campoTitle">Nombre:</h4>
+                <input type="text" name="name" required class="txt">
+                <h4 class="campoTitle">Email:</h4>
+                <input type="email" name="email" required class="txt">
+                <h4 class="campoTitle">Mensaje:</h4>
+                <textarea name="mensaje" class="txt" style="height: 300px;"></textarea>                
+                <button type="submit" class="txt">Enviar</button>
+            </form>
+        </div>
     </main>
+    <footer>
+        Copyright &#9400 <span id="actualAge"></span>, Julian Emiliano. All Rights Reserved
+    </footer>
 <script src="https://kit.fontawesome.com/0fc7e59118.js" crossorigin="anonymous"></script>
 <script src="indexScript.js"></script>
 </body>
